@@ -138,7 +138,7 @@
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    <div id="emailHelp" class="form-text" >We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -157,13 +157,30 @@
 </section>
 <!-- akhir contact -->
 
-
+<!-- drak/light-->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>Mode Dark/Light</h3>
+      <p>klik tombol di bawah</p>
+      <input type="checkbox" id="input-tombol" onclick="ubahMode()" >
+    </div>
+  </div>
+</div>
+<!-- Akhir drak/light-->
 <!-- footer -->
   <footer class="bg-warning text-white text-center pb-5 fs-6">
-    <p>Create with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://instagram.com/cordox3"> @cordox3</a></p>
+    <p>Copyright &#169;  <i class="bi bi-heart-fill text-danger"></i> by <a href="https://instagram.com/cordox3"> &#64;&dd;&ee;&ii;&#9734; </a></p>
   </footer>
 <!-- akhir footer -->
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+      function ubahMode(){
+        const ubah = document.body;
+        ubah.classList.toggle("dark");
+      }
+    </script>
   </body>
 </html>
